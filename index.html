@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        header{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 80%;
+        }
+        img{
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        }
+        ul.nav-bar{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        }
+
+        ul.nav-bar li{
+        float: left;
+        }
+        ul.nav-bar li a {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+        main {
+        max-width: 100%;
+        margin: auto;
+        }
+        #form{
+        display: flex;
+        justify-content: center;  
+        }
+        section{
+
+        float: left;
+        margin: 0 1.5%;
+        width: 30%;
+        }
+        ul.package-features{
+                list-style-type: circle;
+        }
+        ul.package-features.li{
+        float:none;
+        }
+        #video-div{
+        clear: both;
+
+        display: flex;
+        justify-content: center;  
+        }
+        h1.pricing-h1{
+        text-align: center;
+        margin-top: 0;
+        background-color: grey;
+        }
+        @media screen and (max-width: 680px){
+        ul.nav-bar li{
+        float: left;
+        }
+        }
+    </style>
+     <header id="header">
+        <img id="header-img" src="https://images.pexels.com/photos/4110334/pexels-photo-4110334.jpeg?cs=srgb&dl=pexels-polina-tankilevitch-4110334.jpg&fm=jpg">
+        <nav id="nav-bar">
+          <ul class="nav-bar">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input type="email" id="email" name="email" placeholder="bob@example.com">
+            <input type="submit" id="submit">
+        </form>
+        <div id="home">Checking nav links</div>
+        <div id="contact">Checking nav links</div>
+        <div id="about">Checking nav links</div>
+        <div id="pricing">
+            <section id="basic">
+                <h1 class="pricing-h1">Basic</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo modi doloribus dolorem incidunt fugit officiis, voluptatum velit asperiores quasi corrupti quibusdam eligendi amet fuga nemo tenetur in recusandae praesentium numquam sequi distinctio! Expedita itaque, eum necessitatibus, minima deleniti omnis recusandae suscipit consequuntur mollitia, sed dicta. Eos laudantium voluptas pariatur, possimus laboriosam obcaecati consequuntur rerum, nulla vel, asperiores autem.
+                </p>
+                <ul class="package-features">
+                    <li>one thing</li>
+                    <li>one thing</li>
+                    <li>one thing</li>
+                    <li>one thing</li>
+                </ul>
+            </section>
+            <section id="deluxe">
+                <h1 class="pricing-h1">Deluxe</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo modi doloribus dolorem incidunt fugit officiis, voluptatum velit asperiores quasi corrupti quibusdam eligendi amet fuga nemo tenetur in recusandae praesentium numquam sequi distinctio! Expedita itaque, eum necessitatibus, minima deleniti omnis recusandae suscipit consequuntur mollitia, sed dicta. Eos laudantium voluptas pariatur, possimus laboriosam obcaecati consequuntur rerum, nulla vel, asperiores autem.
+                </p>
+                <ul class="package-features">
+                    <li>one thing</li>
+                    <li>one thing</li>
+                    <li>one thing</li>
+                    <li>one thing</li>
+                </ul>
+            </section>
+            <section id="premium">
+                <h1 class="pricing-h1">Premium</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo modi doloribus dolorem incidunt fugit officiis, voluptatum velit asperiores quasi corrupti quibusdam eligendi amet fuga nemo tenetur in recusandae praesentium numquam sequi distinctio! Expedita itaque, eum necessitatibus, minima deleniti omnis recusandae suscipit consequuntur mollitia, sed dicta. Eos laudantium voluptas pariatur, possimus laboriosam obcaecati consequuntur rerum, nulla vel, asperiores autem.
+                </p>
+                <ul class="package-features">
+                    <li>one thing</li>
+                    <li>one thing</li>
+                    <li>one thing</li>
+                    <li>one thing</li>
+                </ul>
+            </section>
+        </div>
+        <div id="video-div">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Ct6BUPvE2sM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </main>
+    <footer></footer>
+</html>
