@@ -7,68 +7,104 @@
 </head>
 <body>
     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            background-color: #e6e6e6;
+        }
         header{
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #001a4d;
         }
         img{
-        height: 75px;
-        width: 75px;
-        border-radius: 50%;
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
         }
         ul.nav-bar{
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
         }
-
         ul.nav-bar li{
-        float: left;
+            float: left;
         }
         ul.nav-bar li a {
-        display: block;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: #f2f2f2;
         }
         main {
-        max-width: 100%;
-        margin: auto;
+            max-width: 100%;
+            margin: auto;
         }
         #form{
-        display: flex;
-        justify-content: center;  
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        input {
+            display: flex;
+            line-height: 24px;
+            margin: 5px;
+            font-size: large;
+            border: 0 ;
+            border-radius: 8px;
+        }
+        input[type=email]{
+            width: 50vmin;
+            padding-left: 10px;
+        }
+        input[type=submit]{
+            background-color: #001a4d;
+            color: #ffffff;
+            padding: .5em;
         }
         section{
-
-        float: left;
-        margin: 0 1.5%;
-        width: 30%;
+            float: left;
+            margin: 0 1.5%;
+            width: 30%;
+            border: 0px solid black;
+            border-radius: 6px;
+            background-color: #f2f2f2;
+            font-size: large;
         }
         ul.package-features{
-                list-style-type: circle;
+            list-style-type: circle;
         }
-        ul.package-features.li{
-        float:none;
+        ul.package-features li{
+            float:none;
+            padding: 2px;  
         }
         #video-div{
-        clear: both;
-
-        display: flex;
-        justify-content: center;  
+            clear: both;
+            display: flex;
+            justify-content: center;
+            padding-top: 26px;
         }
         h1.pricing-h1{
-        text-align: center;
-        margin-top: 0;
-        background-color: grey;
+            text-align: center;
+            margin-top: 0;
+            background-color: #001a4d;
+            color: #ffffff;
+            padding: .5em;
         }
-        @media screen and (max-width: 680px){
-        ul.nav-bar li{
-        float: left;
+        p{
+        padding: 0 25px;
         }
+        @media screen and (max-width: 480px){
+            ul.nav-bar li{
+                float: left;
+            }
+            section{
+                float: none;
+                width: 90%;
+            }
         }
     </style>
      <header id="header">
@@ -84,7 +120,7 @@
     <main>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
             <input type="email" id="email" name="email" placeholder="bob@example.com">
-            <input type="submit" id="submit">
+            <input type="submit" id="submit" value="Get Started">
         </form>
         <div id="home">Checking nav links</div>
         <div id="contact">Checking nav links</div>
@@ -93,7 +129,7 @@
             <section id="basic">
                 <h1 class="pricing-h1">Basic</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo modi doloribus dolorem incidunt fugit officiis, voluptatum velit asperiores quasi corrupti quibusdam eligendi amet fuga nemo tenetur in recusandae praesentium numquam sequi distinctio! Expedita itaque, eum necessitatibus, minima deleniti omnis recusandae suscipit consequuntur mollitia, sed dicta. Eos laudantium voluptas pariatur, possimus laboriosam obcaecati consequuntur rerum, nulla vel, asperiores autem.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo modi doloribus dolorem incidunt fugit officiis
                 </p>
                 <ul class="package-features">
                     <li>one thing</li>
@@ -105,7 +141,7 @@
             <section id="deluxe">
                 <h1 class="pricing-h1">Deluxe</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo modi doloribus dolorem incidunt fugit officiis, voluptatum velit asperiores quasi corrupti quibusdam eligendi amet fuga nemo tenetur in recusandae praesentium numquam sequi distinctio! Expedita itaque, eum necessitatibus, minima deleniti omnis recusandae suscipit consequuntur mollitia, sed dicta. Eos laudantium voluptas pariatur, possimus laboriosam obcaecati consequuntur rerum, nulla vel, asperiores autem.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo modi doloribus dolorem incidunt fugit officiis.
                 </p>
                 <ul class="package-features">
                     <li>one thing</li>
@@ -117,7 +153,7 @@
             <section id="premium">
                 <h1 class="pricing-h1">Premium</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo modi doloribus dolorem incidunt fugit officiis, voluptatum velit asperiores quasi corrupti quibusdam eligendi amet fuga nemo tenetur in recusandae praesentium numquam sequi distinctio! Expedita itaque, eum necessitatibus, minima deleniti omnis recusandae suscipit consequuntur mollitia, sed dicta. Eos laudantium voluptas pariatur, possimus laboriosam obcaecati consequuntur rerum, nulla vel, asperiores autem.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo modi doloribus dolorem incidunt fugit officiis.
                 </p>
                 <ul class="package-features">
                     <li>one thing</li>
@@ -131,5 +167,5 @@
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Ct6BUPvE2sM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         </main>
-    <footer></footer>
+</body>
 </html>
